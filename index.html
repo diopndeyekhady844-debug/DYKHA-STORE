@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DYKHA STORE | Prêt-à-Porter & Accessoires de Luxe</title>
+  <meta name="description"
+    content="DYKHA STORE - Boutique de mode haut de gamme à Dakar. Vêtements et accessoires pour femmes, hommes et enfants. Commandes en ligne et via WhatsApp.">
+
+  <!-- Open Graph / Réseaux Sociaux & Partage -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DYKHA STORE | Mode & Accessoires de Luxe">
+  <meta property="og:description" content="Découvrez nos collections pour femmes, hommes et enfants. Commandez en ligne ou via WhatsApp avec livraison rapide partout au Sénégal.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80">
+  <meta name="theme-color" content="#D47380">
+
+  <!-- Favicon SVG élégant -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23D47380'/><text x='50' y='64' font-size='42' font-family='serif' font-weight='bold' fill='white' text-anchor='middle'>D</text></svg>">
+
+  <!-- Polices Google : Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===================================================================
+       BANDEAU D'ANNONCE HAUT DE PAGE
+       =================================================================== -->
+  <aside class="announcement-bar">
+    <div class="container announcement-content">
+      <div class="announcement-text">
+        <i class="fa-solid fa-truck-fast"></i> Livraison express à Dakar et partout au Sénégal &bull; Paiement sécurisé
+        à la livraison
+      </div>
+      <div class="social-quick">
+        <span>Commandes directes :</span>
+        <a href="https://wa.me/221778534211" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://tiktok.com/@dykhastore" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://instagram.com/dykha.store" target="_blank" title="Instagram"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://facebook.com/dykhastore" target="_blank" title="Facebook"><i
+            class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===================================================================
+       EN-TÊTE PRINCIPAL (HEADER)
+       =================================================================== -->
+  <header class="main-header" id="mainHeader">
+    <div class="container header-inner">
+      <!-- Bouton Menu Mobile -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Ouvrir le menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- Logo de la marque -->
+      <a href="#accueil" class="brand-logo" id="logoLink">
+        <h1 class="logo-title">DYKHA <span>STORE</span></h1>
+        <span class="logo-tagline">L'Élégance à votre portée</span>
+      </a>
+
+      <!-- Menu de Navigation -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#accueil" class="nav-link active">Accueil</a>
+        <a href="#catalogue" class="nav-link" data-cat="femme">Femme</a>
+        <a href="#catalogue" class="nav-link" data-cat="homme">Homme</a>
+        <a href="#catalogue" class="nav-link" data-cat="enfants">Enfants</a>
+        <a href="#catalogue" class="nav-link" data-cat="accessoires">Accessoires</a>
+        <a href="#socialOrder" class="nav-link">Commander en Ligne</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Boutons d'Action Utilisateur -->
+      <div class="header-actions">
+        <!-- Recherche Rapide -->
+        <button class="action-btn" id="btnHeaderSearch" title="Recherche">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <!-- Espace Client / Connexion -->
+        <button class="action-btn" id="btnUserAccount" title="Espace Client">
+          <i class="fa-regular fa-user"></i>
+        </button>
+
+        <!-- Favoris -->
+        <button class="action-btn" id="btnWishlist" title="Favoris">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge-counter" id="wishlistCount">0</span>
+        </button>
+
+        <!-- Panier d'achat -->
+        <button class="action-btn" id="btnCartTrigger" title="Panier d'achat">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="badge-counter" id="cartCount">0</span>
+        </button>
+
+        <!-- Accès Administrateur -->
+        <button class="action-btn admin-switch-btn" id="btnAdminSwitch" title="Espace Administrateur">
+          <i class="fa-solid fa-lock"></i>
+          <span class="admin-label">Admin</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       VUE PRINCIPALE BOUTIQUE (STORE VIEW)
+       =================================================================== -->
+  <main id="storeView">
+
+    <!-- HERO SECTION BANNER -->
+    <section class="hero-section" id="accueil">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-tag">
+            <i class="fa-solid fa-sparkles"></i> Nouvelle Collection 2026
+          </span>
+          <h2 class="hero-title">Révélez votre prestance avec <em>DYKHA STORE</em></h2>
+          <p class="hero-desc">
+            Explorez notre sélection exclusive de vêtements chics, combinaisons élégantes, costumes sur mesure et
+            accessoires raffinés en or, argent et maroquinerie d'exception.
+          </p>
+          <div class="hero-buttons">
+            <a href="#catalogue" class="btn-primary">
+              <i class="fa-solid fa-gem"></i> Découvrir la Collection
+            </a>
+            <a href="https://wa.me/221778534211?text=Bonjour%20DYKHA%20STORE,%20je%20souhaite%20d%C3%A9couvrir%20vos%20derniers%20articles%20disponibles."
+              target="_blank" class="btn-whatsapp-hero">
+              <i class="fa-brands fa-whatsapp"></i> Commander sur WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-visual-card">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=80"
+              alt="Collection Mode DYKHA STORE">
+            <div class="hero-floating-badge">
+              <i class="fa-solid fa-award"></i>
+              <div>
+                <p class="title">Authenticité & Qualité</p>
+                <p class="subtitle">Plus de 2 500 clients satisfaits</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR & AVANTAGES -->
+    <section class="features-bar">
+      <div class="container features-grid">
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-truck"></i></div>
+          <div class="feature-info">
+            <h4>Livraison Partout</h4>
+            <p>Dakar sous 24h & expédition sous-régionale</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="feature-info">
+            <h4>Commande en 1 Clic</h4>
+            <p>Directement via WhatsApp & Réseaux</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
+          <div class="feature-info">
+            <h4>Bijoux Or & Argent</h4>
+            <p>Poinçon officiel et pureté certifiée</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+          <div class="feature-info">
+            <h4>Paiement Flexible</h4>
+            <p>Espèces à la livraison, Wave & Orange Money</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APERÇU DES 4 GRANDES CATÉGORIES -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Univers de Style</span>
+          <h2 class="section-title">Nos Catégories Exclusives</h2>
+          <p class="section-desc">Des pièces méticuleusement sélectionnées pour illuminer votre dressing et celui de
+            toute votre famille.</p>
+        </div>
+
+        <div class="categories-showcase">
+          <!-- Carte Femme -->
+          <div class="category-card" data-filter="femme">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80"
+              alt="Mode Femme">
+            <div class="category-overlay">
+              <h3>Femme</h3>
+              <p>Robes, pantalons larges, combinaisons & foulards</p>
+              <span>Explorer <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+
+          <!-- Carte Homme -->
+          <div class="category-card" data-filter="homme">
+            <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=700&q=80"
+              alt="Mode Homme">
+            <div class="category-overlay">
+              <h3>Homme</h3>
+              <p>Costumes 2 pièces, chemises d'exception & souliers</p>
+              <span>Explorer <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+
+          <!-- Carte Enfants -->
+          <div class="category-card" data-filter="enfants">
+            <img src="https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=700&q=80"
+              alt="Mode Enfants">
+            <div class="category-overlay">
+              <h3>Enfants</h3>
+              <p>Filles de fête, garçons élégants & bébés douceur</p>
+              <span>Explorer <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+
+          <!-- Carte Accessoires -->
+          <div class="category-card" data-filter="accessoires">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=80"
+              alt="Accessoires & Bijoux">
+            <div class="category-overlay">
+              <h3>Accessoires</h3>
+              <p>Sacs en cuir, bijoux or/argent, montres & lunettes</p>
+              <span>Explorer <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATALOGUE PRODUITS ET FILTRAGE -->
+    <section class="section-padding catalog-section" id="catalogue">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Boutique en Ligne</span>
+          <h2 class="section-title">Tous Nos Articles en Stock</h2>
+          <p class="section-desc">Faites votre choix parmi nos créations en FCFA, sélectionnez votre taille et passez
+            commande en quelques clics.</p>
+        </div>
+
+        <!-- BARRE DE FILTRES ET RECHERCHE -->
+        <div class="filters-toolbar">
+          <!-- Onglets Grandes Catégories -->
+          <div class="categories-tabs" id="categoriesTabs">
+            <!-- Rendu dynamiquement via JS -->
+          </div>
+
+          <!-- Sous-catégories dynamiques -->
+          <div class="subcategories-bar" id="subcategoriesBar">
+            <!-- Rendu dynamiquement lors du clic sur une catégorie -->
+          </div>
+
+          <!-- Recherche & Tri -->
+          <div class="search-and-sort">
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="searchInput"
+                placeholder="Rechercher une robe, un costume, un bijou, une montre...">
+            </div>
+
+            <div class="sort-box">
+              <label for="sortSelect"><i class="fa-solid fa-arrow-down-short-wide"></i> Trier par :</label>
+              <select id="sortSelect" class="sort-select">
+                <option value="popular">Popularité & Recommandés</option>
+                <option value="price-asc">Prix croissant (FCFA)</option>
+                <option value="price-desc">Prix décroissant (FCFA)</option>
+                <option value="name-asc">Nom (A &rarr; Z)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- GRILLE DE PRODUITS -->
+        <div class="products-grid" id="productsGrid">
+          <!-- Rendu dynamique par app.js -->
+        </div>
+
+        <!-- ÉTAT VIDE SI AUCUN RÉSULTAT -->
+        <div id="noProductsMsg" style="display: none; text-align: center; padding: 60px 20px;">
+          <i class="fa-solid fa-search" style="font-size: 3rem; color: var(--rose-primary); margin-bottom: 16px;"></i>
+          <h3>Aucun article ne correspond à votre recherche</h3>
+          <p style="color: var(--text-secondary); margin-top: 8px;">Essayez de réinitialiser vos filtres ou de chercher
+            un autre mot-clé.</p>
+          <button class="btn-primary" id="btnResetFilters" style="margin-top: 20px;">
+            <i class="fa-solid fa-rotate-left"></i> Réinitialiser les filtres
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION COMMANDES MULTICANAUX (WhatsApp, TikTok, Facebook, Instagram, Google) -->
+    <section class="social-ordering-section" id="socialOrder">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Commandes Simplifiées</span>
+          <h2 class="section-title">Commandez Sur Vos Réseaux Préférés</h2>
+          <p class="section-desc">Vous avez repéré un article sur notre feed ? Notre service client est connecté en
+            direct pour valider votre commande et organiser votre livraison.</p>
+        </div>
+
+        <div class="social-channels-grid">
+          <!-- WhatsApp -->
+          <div class="social-channel-card whatsapp">
+            <div class="channel-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <h4>WhatsApp Direct</h4>
+            <p>Discutez avec une conseillère, envoyez vos photos et recevez votre colis à domicile.</p>
+            <a href="https://wa.me/221778534211?text=Bonjour%20DYKHA%20STORE,%20je%20souhaite%20passer%20une%20commande."
+              target="_blank" class="channel-btn">
+              <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+            </a>
+          </div>
+
+          <!-- TikTok -->
+          <div class="social-channel-card tiktok">
+            <div class="channel-icon"><i class="fa-brands fa-tiktok"></i></div>
+            <h4>TikTok Boutique</h4>
+            <p>Retrouvez nos essayages en vidéo, défilés en direct et nos codes promos exclusifs.</p>
+            <a href="https://tiktok.com/@dykhastore" target="_blank" class="channel-btn">
+              <i class="fa-brands fa-tiktok"></i> Voir TikTok
+            </a>
+          </div>
+
+          <!-- Instagram -->
+          <div class="social-channel-card instagram">
+            <div class="channel-icon"><i class="fa-brands fa-instagram"></i></div>
+            <h4>Instagram Direct</h4>
+            <p>Commandez via nos Stories ou DM en nous envoyant la capture de votre tenue coup de cœur.</p>
+            <a href="https://instagram.com/dykha.store" target="_blank" class="channel-btn">
+              <i class="fa-brands fa-instagram"></i> Suivre sur Insta
+            </a>
+          </div>
+
+          <!-- Facebook -->
+          <div class="social-channel-card facebook">
+            <div class="channel-icon"><i class="fa-brands fa-facebook-f"></i></div>
+            <h4>Facebook Shop</h4>
+            <p>Rejoignez la communauté DYKHA STORE, découvrez les avis de nos clientes et commandez sur Messenger.</p>
+            <a href="https://facebook.com/dykhastore" target="_blank" class="channel-btn">
+              <i class="fa-brands fa-facebook"></i> Boutique Facebook
+            </a>
+          </div>
+
+          <!-- Google -->
+          <div class="social-channel-card google">
+            <div class="channel-icon"><i class="fa-brands fa-google"></i></div>
+            <h4>Fiche Google</h4>
+            <p>Localisez notre showroom à Dakar, consultez les horaires d'ouverture et les itinéraires.</p>
+            <a href="https://maps.google.com/?q=DYKHA+STORE+Dakar" target="_blank" class="channel-btn">
+              <i class="fa-solid fa-location-dot"></i> Nous trouver
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT & FORMULAIRE -->
+    <section class="section-padding" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Service Clientèle</span>
+          <h2 class="section-title">Contactez-Nous</h2>
+          <p class="section-desc">Une question sur une taille, une disponibilité ou un partenariat ? Notre équipe vous
+            répond avec grand plaisir.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Infos Contact -->
+          <div class="contact-info-card">
+            <h3>DYKHA STORE Dakar</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 24px;">Votre destination de prestige pour la mode et
+              la haute couture en Afrique de l'Ouest.</p>
+
+            <div class="contact-details-list">
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-item-text">
+                  <h5>Adresse</h5>
+                  <p>Boulevard de la République & Route des Almadies, Dakar, Sénégal</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-item-text">
+                  <h5>Téléphone & WhatsApp</h5>
+                  <p><a href="tel:+221778534211">+221 77 853 42 11</a> / <a href="tel:+221338000000">+221 33 800 00
+                      00</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-item-text">
+                  <h5>Courriel Officiel</h5>
+                  <p><a href="mailto:contact@dykhastore.com">contact@dykhastore.com</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-solid fa-clock"></i></div>
+                <div class="contact-item-text">
+                  <h5>Horaires d'Ouverture</h5>
+                  <p>Lundi au Samedi : 09h30 - 20h30 &bull; Dimanche : Sur rendez-vous</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulaire de Message -->
+          <div class="contact-form-card">
+            <h3>Envoyez-nous un Message</h3>
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="contactName">Nom complet *</label>
+                  <input type="text" id="contactName" class="form-control" placeholder="Ex: Aminata Diallo" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contactPhone">Téléphone *</label>
+                  <input type="tel" id="contactPhone" class="form-control" placeholder="Ex: +221 77 123 45 67" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">Adresse e-mail</label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="Ex: aminata@exemple.com">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactSubject">Objet de votre demande</label>
+                <select id="contactSubject" class="form-control">
+                  <option value="commande">Information sur une commande</option>
+                  <option value="taille">Conseil choix de taille ou matière</option>
+                  <option value="bijoux">Authenticité bijoux or/argent</option>
+                  <option value="autre">Autre demande</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactMessage">Votre Message *</label>
+                <textarea id="contactMessage" class="form-control" rows="4" placeholder="Écrivez votre message ici..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width: 100%;">
+                <i class="fa-regular fa-paper-plane"></i> Envoyer le message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================
+       VUE ESPACE ADMINISTRATEUR (ADMIN DASHBOARD)
+       =================================================================== -->
+  <section class="admin-section" id="adminView">
+    <div class="admin-header">
+      <div class="container admin-header-inner">
+        <div class="admin-title-badge">
+          <i class="fa-solid fa-shield-halved" style="font-size: 1.6rem; color: var(--rose-primary);"></i>
+          <div>
+            <h2>Espace Administrateur &bull; DYKHA STORE</h2>
+            <span style="font-size: 0.8rem; color: #BBB0B2;">Gestion des stocks, articles, commandes et clients</span>
+          </div>
+        </div>
+
+        <div>
+          <button class="btn-outline" id="btnAdminQuit"
+            style="color: var(--white); border-color: rgba(255,255,255,0.4);">
+            <i class="fa-solid fa-arrow-left"></i> Retour à la Boutique
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- INDICATEURS CLÉS (KPIS) -->
+      <div class="admin-kpis-grid">
+        <div class="kpi-card sales">
+          <div class="kpi-icon"><i class="fa-solid fa-coins"></i></div>
+          <div class="kpi-data">
+            <h4>Chiffre d'Affaires</h4>
+            <div class="kpi-number" id="kpiRevenue">0 FCFA</div>
+          </div>
+        </div>
+
+        <div class="kpi-card orders">
+          <div class="kpi-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+          <div class="kpi-data">
+            <h4>Commandes</h4>
+            <div class="kpi-number" id="kpiOrdersCount">0</div>
+          </div>
+        </div>
+
+        <div class="kpi-card products">
+          <div class="kpi-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+          <div class="kpi-data">
+            <h4>Articles Catalogue</h4>
+            <div class="kpi-number" id="kpiProductsCount">0</div>
+          </div>
+        </div>
+
+        <div class="kpi-card clients">
+          <div class="kpi-icon"><i class="fa-solid fa-users"></i></div>
+          <div class="kpi-data">
+            <h4>Clients Enregistrés</h4>
+            <div class="kpi-number" id="kpiClientsCount">0</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ONGLETS DE GESTION ADMIN -->
+      <div class="admin-tabs">
+        <button class="admin-tab-btn active" data-tab="products">
+          <i class="fa-solid fa-shirt"></i> Gestion des Articles
+        </button>
+        <button class="admin-tab-btn" data-tab="orders">
+          <i class="fa-solid fa-clipboard-list"></i> Commandes Reçues
+        </button>
+        <button class="admin-tab-btn" data-tab="clients">
+          <i class="fa-solid fa-user-group"></i> Répertoire Clients
+        </button>
+      </div>
+
+      <!-- ONGLET 1 : GESTION DES PRODUITS -->
+      <div class="admin-tab-pane" id="paneProducts">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <h3>Catalogue des Produits & Stocks</h3>
+            <button class="btn-primary" id="btnOpenAddProduct">
+              <i class="fa-solid fa-plus"></i> Ajouter un nouvel article
+            </button>
+          </div>
+          <div style="overflow-x: auto;">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Article</th>
+                  <th>Catégorie</th>
+                  <th>Sous-catégorie</th>
+                  <th>Prix (FCFA)</th>
+                  <th>Stock</th>
+                  <th>Statut</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="adminProductsTableBody">
+                <!-- Rendu via js/admin.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- ONGLET 2 : GESTION DES COMMANDES -->
+      <div class="admin-tab-pane" id="paneOrders" style="display: none;">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <h3>Historique des Commandes en Ligne & WhatsApp</h3>
+            <span style="font-size: 0.85rem; color: var(--text-secondary);" id="ordersTotalSummary">0 commande(s)</span>
+          </div>
+          <div style="overflow-x: auto;">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Réf</th>
+                  <th>Client</th>
+                  <th>Téléphone</th>
+                  <th>Ville / Adresse</th>
+                  <th>Articles commandés</th>
+                  <th>Total (FCFA)</th>
+                  <th>Statut</th>
+                  <th>Changer Statut</th>
+                </tr>
+              </thead>
+              <tbody id="adminOrdersTableBody">
+                <!-- Rendu via js/admin.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- ONGLET 3 : GESTION DES CLIENTS -->
+      <div class="admin-tab-pane" id="paneClients" style="display: none;">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <h3>Liste des Clients Enregistrés</h3>
+          </div>
+          <div style="overflow-x: auto;">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Nom complet</th>
+                  <th>Email</th>
+                  <th>Téléphone</th>
+                  <th>Ville</th>
+                  <th>Date d'inscription</th>
+                  <th>Commandes passées</th>
+                </tr>
+              </thead>
+              <tbody id="adminClientsTableBody">
+                <!-- Rendu via js/admin.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       PIED DE PAGE (FOOTER)
+       =================================================================== -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h2 class="logo-title">DYKHA <span>STORE</span></h2>
+        <p>Boutique haut de gamme à Dakar spécialisée dans le prêt-à-porter pour femme, homme, enfant et accessoires
+          prestigieux en or, argent et maroquinerie.</p>
+        <div class="footer-social-icons">
+          <a href="https://wa.me/221778534211" target="_blank" title="WhatsApp"><i
+              class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://tiktok.com/@dykhastore" target="_blank" title="TikTok"><i
+              class="fa-brands fa-tiktok"></i></a>
+          <a href="https://instagram.com/dykha.store" target="_blank" title="Instagram"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com/dykhastore" target="_blank" title="Facebook"><i
+              class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Nos Catégories</h4>
+        <ul class="footer-links">
+          <li><a href="#catalogue" data-cat="femme">Mode Femme</a></li>
+          <li><a href="#catalogue" data-cat="homme">Mode Homme</a></li>
+          <li><a href="#catalogue" data-cat="enfants">Enfants & Bébés</a></li>
+          <li><a href="#catalogue" data-cat="accessoires">Bijoux Or & Argent</a></li>
+          <li><a href="#catalogue" data-cat="accessoires">Sacs & Chaussures</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Informations</h4>
+        <ul class="footer-links">
+          <li><a href="#accueil">À Propos de DYKHA</a></li>
+          <li><a href="#contact">Nos Boutiques & Salons</a></li>
+          <li><a href="#socialOrder">Commandes WhatsApp</a></li>
+          <li><a href="#contact">Modalités de Livraison</a></li>
+          <li><a href="javascript:void(0)" id="footerAdminLink">Espace Administration</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Newsletter Privée</h4>
+        <p style="font-size: 0.85rem; margin-bottom: 14px;">Recevez nos ventes privées et nouvelles collections en
+          avant-première.</p>
+        <form id="newsletterForm" style="display: flex; gap: 8px;">
+          <input type="email" placeholder="Votre email..." class="form-control"
+            style="background: rgba(255,255,255,0.1); color: var(--white); border-color: rgba(255,255,255,0.2);"
+            required>
+          <button type="submit" class="btn-primary" style="padding: 10px 16px;">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 DYKHA STORE. Tous droits réservés. Conçu avec passion & élégance.</p>
+      <p>Prix affichés en Francs CFA (XOF) &bull; Livraison partout au Sénégal</p>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       MODAL APERÇU RAPIDE PRODUIT (QUICK VIEW)
+       =================================================================== -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="closeQuickView" aria-label="Fermer">&times;</button>
+      <div class="quick-view-grid">
+        <div class="quick-view-img">
+          <img src="" alt="" id="qvImage">
+        </div>
+        <div class="quick-view-info">
+          <span class="product-cat" id="qvCategory">Catégorie</span>
+          <h2 class="product-name" id="qvTitle" style="font-size: 1.5rem; margin-bottom: 10px;">Titre de l'article</h2>
+          <div class="product-rating" id="qvRating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span id="qvReviews">(34 avis vérifiés)</span>
+          </div>
+
+          <div class="product-price-row" style="margin-bottom: 16px;">
+            <span class="current-price" id="qvPrice" style="font-size: 1.6rem;">0 FCFA</span>
+            <span class="old-price" id="qvOldPrice"></span>
+          </div>
+
+          <p id="qvDescription"
+            style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 16px; line-height: 1.6;">
+            Description du produit...
+          </p>
+
+          <!-- Caractéristiques & Fiche Technique Détaillée -->
+          <div class="product-specs-wrapper" id="qvSpecsWrapper">
+            <div class="selector-title">
+              <i class="fa-solid fa-clipboard-list" style="color: var(--rose-primary); margin-right: 6px;"></i>
+              Caractéristiques du produit :
+            </div>
+            <div class="specs-grid" id="qvSpecsList"></div>
+          </div>
+
+          <!-- Sélection des Tailles -->
+          <div id="qvSizeContainer">
+            <div class="selector-title">Sélectionner la Taille :</div>
+            <div class="size-chips" id="qvSizesList"></div>
+          </div>
+
+          <!-- Sélection des Couleurs -->
+          <div id="qvColorContainer">
+            <div class="selector-title">Couleurs disponibles :</div>
+            <div class="color-dots" id="qvColorsList"></div>
+          </div>
+
+          <!-- Quantité et Stock -->
+          <div style="font-size: 0.8rem; margin-bottom: 10px;" id="qvStockNotice">
+            <i class="fa-solid fa-circle-check" style="color: var(--success);"></i> <span id="qvStockText">En
+              stock</span>
+          </div>
+
+          <div class="quantity-row">
+            <div class="qty-stepper">
+              <button class="qty-btn" id="qvQtyMinus"><i class="fa-solid fa-minus"></i></button>
+              <input type="text" class="qty-input" id="qvQtyInput" value="1" readonly>
+              <button class="qty-btn" id="qvQtyPlus"><i class="fa-solid fa-plus"></i></button>
+            </div>
+
+            <button class="btn-primary" id="qvAddToCartBtn" style="flex: 1;">
+              <i class="fa-solid fa-bag-shopping"></i> Ajouter au panier
+            </button>
+          </div>
+
+          <!-- Bouton direct WhatsApp pour cet article -->
+          <button class="btn-cart-whatsapp" id="qvWhatsAppOrderBtn">
+            <i class="fa-brands fa-whatsapp"></i> Commander cet article sur WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       TIROIR PANIER COULISSANT (CART DRAWER)
+       =================================================================== -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3><i class="fa-solid fa-bag-shopping" style="color: var(--rose-primary);"></i> Votre Panier (<span
+          id="cartDrawerCount">0</span>)</h3>
+      <button class="modal-close-btn" id="closeCartDrawer" style="position: static;">&times;</button>
+    </div>
+
+    <div class="cart-body" id="cartItemsContainer">
+      <!-- Rendu dynamique par app.js -->
+    </div>
+
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-summary-line">
+        <span>Sous-total</span>
+        <span id="cartSubtotal">0 FCFA</span>
+      </div>
+      <div class="cart-summary-line">
+        <span>Livraison (Dakar / Régions)</span>
+        <span id="cartShipping">2 000 FCFA</span>
+      </div>
+      <div class="cart-summary-total">
+        <span>Total Net</span>
+        <span id="cartTotal">2 000 FCFA</span>
+      </div>
+
+      <div class="cart-actions">
+        <button class="btn-cart-checkout" id="btnOpenCheckout">
+          <i class="fa-solid fa-lock"></i> Valider la commande en ligne
+        </button>
+        <button class="btn-cart-whatsapp" id="btnCartOrderWhatsApp">
+          <i class="fa-brands fa-whatsapp"></i> Commander le panier sur WhatsApp
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===================================================================
+       MODAL CHECKOUT (FINALISATION DE COMMANDE)
+       =================================================================== -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal-dialog" style="max-width: 650px;">
+      <button class="modal-close-btn" id="closeCheckout">&times;</button>
+      <div style="padding: 30px;">
+        <h3 style="font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 8px;">
+          Finaliser votre commande
+        </h3>
+        <p style="color: var(--text-secondary); font-size: 0.88rem; margin-bottom: 24px;">
+          Renseignez vos coordonnées pour recevoir votre colis en toute sérénité.
+        </p>
+
+        <form id="checkoutForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="orderFullName">Nom complet *</label>
+              <input type="text" id="orderFullName" class="form-control" placeholder="Ex: Fatou Ndiaye" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="orderPhone">Numéro de téléphone WhatsApp *</label>
+              <input type="tel" id="orderPhone" class="form-control" placeholder="Ex: 77 000 00 00" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="orderCity">Ville / Zone *</label>
+              <select id="orderCity" class="form-control" required>
+                <option value="Dakar">Dakar (Plateau, Almadies, Mermoz, Maristes...)</option>
+                <option value="Banlieue">Banlieue (Pikine, Guédiawaye, Rufisque)</option>
+                <option value="Thiès">Thiès</option>
+                <option value="Mbour">Mbour / Saly</option>
+                <option value="Saint-Louis">Saint-Louis</option>
+                <option value="Autre">Autre région du Sénégal</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="orderAddress">Adresse exacte de livraison *</label>
+              <input type="text" id="orderAddress" class="form-control" placeholder="Quartier, Rue, N° de villa"
+                required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Mode de paiement préféré</label>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 6px;">
+              <label
+                style="border: 1px solid var(--border-subtle); padding: 10px; border-radius: var(--radius-sm); font-size: 0.82rem; cursor: pointer; text-align: center; background: var(--beige-bg);">
+                <input type="radio" name="paymentMethod" value="cash" checked style="margin-right: 4px;"> Espèces à la
+                livraison
+              </label>
+              <label
+                style="border: 1px solid var(--border-subtle); padding: 10px; border-radius: var(--radius-sm); font-size: 0.82rem; cursor: pointer; text-align: center; background: var(--beige-bg);">
+                <input type="radio" name="paymentMethod" value="wave" style="margin-right: 4px;"> Wave
+              </label>
+              <label
+                style="border: 1px solid var(--border-subtle); padding: 10px; border-radius: var(--radius-sm); font-size: 0.82rem; cursor: pointer; text-align: center; background: var(--beige-bg);">
+                <input type="radio" name="paymentMethod" value="om" style="margin-right: 4px;"> Orange Money
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="orderNotes">Instructions spéciales (Optionnel)</label>
+            <textarea id="orderNotes" class="form-control" rows="2"
+              placeholder="Heure idéale de passage, repère particulier..."></textarea>
+          </div>
+
+          <div
+            style="background: var(--beige-bg); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 20px;">
+            <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 1.1rem;">
+              <span>Total à régler :</span>
+              <span id="checkoutTotalAmount" style="color: var(--rose-primary);">0 FCFA</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+            <i class="fa-solid fa-circle-check"></i> Confirmer la commande
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       MODAL ESPACE CLIENT (CONNEXION & INSCRIPTION)
+       =================================================================== -->
+  <div class="modal-overlay" id="authModal">
+    <div class="modal-dialog" style="max-width: 480px;">
+      <button class="modal-close-btn" id="closeAuth">&times;</button>
+      <div style="padding: 30px;">
+        <div style="text-align: center; margin-bottom: 20px;">
+          <h3 style="font-family: var(--font-serif); font-size: 1.6rem; color: var(--rose-primary);">DYKHA STORE</h3>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Connectez-vous pour suivre vos commandes et
+            avantages</p>
+        </div>
+
+        <!-- Onglets Auth -->
+        <div style="display: flex; border-bottom: 1px solid var(--border-subtle); margin-bottom: 20px;">
+          <button id="tabLoginBtn" class="tab-btn active"
+            style="flex: 1; border-radius: 0; justify-content: center;">Connexion</button>
+          <button id="tabRegisterBtn" class="tab-btn" style="flex: 1; border-radius: 0; justify-content: center;">Créer
+            un compte</button>
+        </div>
+
+        <!-- Formulaire de Connexion -->
+        <form id="loginForm">
+          <div class="form-group">
+            <label class="form-label" for="loginEmail">Email ou Téléphone</label>
+            <input type="text" id="loginEmail" class="form-control" placeholder="votre@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="loginPassword">Mot de passe</label>
+            <input type="password" id="loginPassword" class="form-control" placeholder="••••••••" required>
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px; justify-content: center;">
+            Se connecter
+          </button>
+        </form>
+
+        <!-- Formulaire d'Inscription -->
+        <form id="registerForm" style="display: none;">
+          <div class="form-group">
+            <label class="form-label" for="regName">Nom complet *</label>
+            <input type="text" id="regName" class="form-control" placeholder="Ex: Mariama Ba" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="regEmail">Adresse email *</label>
+            <input type="email" id="regEmail" class="form-control" placeholder="mariama@exemple.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="regPhone">Numéro de téléphone *</label>
+            <input type="tel" id="regPhone" class="form-control" placeholder="+221 77..." required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="regPassword">Mot de passe *</label>
+            <input type="password" id="regPassword" class="form-control" placeholder="Minimum 6 caractères" required>
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px; justify-content: center;">
+            Créer mon compte
+          </button>
+        </form>
+
+        <!-- Vue Profil Connecté -->
+        <div id="userProfileView" style="display: none; text-align: center;">
+          <div
+            style="width: 64px; height: 64px; border-radius: var(--radius-full); background: var(--rose-light); color: var(--rose-primary); display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto 14px;">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <h4 id="profileName" style="font-size: 1.2rem; margin-bottom: 4px;">Utilisateur</h4>
+          <p id="profileEmail" style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 20px;"></p>
+
+          <div
+            style="background: var(--beige-bg); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 20px; text-align: left;">
+            <div style="font-weight: 700; font-size: 0.9rem; margin-bottom: 8px;">Mes Commandes :</div>
+            <div id="userOrdersList" style="font-size: 0.85rem; color: var(--text-secondary);">
+              Aucune commande pour le moment.
+            </div>
+          </div>
+
+          <button class="btn-outline" id="btnLogout" style="width: 100%; justify-content: center;">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i> Déconnexion
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       MODAL AJOUT / ÉDITION PRODUIT (ADMIN)
+       =================================================================== -->
+  <div class="modal-overlay" id="productModal">
+    <div class="modal-dialog" style="max-width: 600px;">
+      <button class="modal-close-btn" id="closeProductModal">&times;</button>
+      <div style="padding: 30px;">
+        <h3 id="productModalTitle" style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 16px;">
+          Ajouter un nouvel article
+        </h3>
+        <form id="productForm">
+          <input type="hidden" id="adminProductId">
+
+          <div class="form-group">
+            <label class="form-label" for="adminProdName">Nom de l'article *</label>
+            <input type="text" id="adminProdName" class="form-control" placeholder="Ex: Robe longue satin rose"
+              required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="adminProdCategory">Catégorie *</label>
+              <select id="adminProdCategory" class="form-control" required>
+                <option value="femme">Femme</option>
+                <option value="homme">Homme</option>
+                <option value="enfants">Enfants</option>
+                <option value="accessoires">Accessoires</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="adminProdSubcategory">Sous-catégorie *</label>
+              <input type="text" id="adminProdSubcategory" class="form-control"
+                placeholder="Ex: Robes, Costumes, Sacs..." required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="adminProdPrice">Prix en FCFA *</label>
+              <input type="number" id="adminProdPrice" class="form-control" placeholder="35000" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="adminProdStock">Quantité en Stock *</label>
+              <input type="number" id="adminProdStock" class="form-control" placeholder="10" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="adminProdImage">URL de l'image *</label>
+            <input type="url" id="adminProdImage" class="form-control" placeholder="https://images.unsplash.com/..."
+              required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="adminProdDesc">Description</label>
+            <textarea id="adminProdDesc" class="form-control" rows="2"
+              placeholder="Détails du vêtement ou accessoire..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="adminProdCharacteristics">
+              <i class="fa-solid fa-list-check" style="color: var(--rose-primary);"></i> Caractéristiques (une par ligne
+              : <em>Libellé: Valeur</em>)
+            </label>
+            <textarea id="adminProdCharacteristics" class="form-control" rows="3"
+              placeholder="Matière: 100% Coton égyptien&#10;Coupe: Ajustée slim fit&#10;Entretien: Lavage 30°C"></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+            <i class="fa-solid fa-save"></i> Enregistrer l'article
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENEUR DES NOTIFICATIONS TOAST -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- SCRIPTS JAVASCRIPT -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+
+</html>
